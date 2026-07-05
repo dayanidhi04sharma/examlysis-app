@@ -1,0 +1,6 @@
+stremlit
+requests
+pillow
+matplotlib
+sympy
+numpy
