@@ -23,7 +23,7 @@ STEP 4 — Browser opens at http://localhost:8501  ✅
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ Groq      → https://console.groq.com   (completely FREE, very fast)
-                 Model used : llama3-8b-8192
+                 Model used : llama-3.3-70b-versatile
 
   ✅ OpenRouter→ https://openrouter.ai       (free tier available)
                  Model used : mistralai/mistral-7b-instruct:free
