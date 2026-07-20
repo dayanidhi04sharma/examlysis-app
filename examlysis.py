@@ -1011,21 +1011,6 @@ with st.sidebar:
     st.markdown('<div class="brand-sub">AI Adaptive Learning</div>', unsafe_allow_html=True)
     st.markdown("---")
 
-    with st.expander("🔑 API Setup", expanded=not bool(st.session_state.api_key)):
-        st.session_state.api_provider = st.selectbox(
-            "Provider", list(PROVIDERS.keys()), index=0)
-        st.session_state.api_key = st.text_input(
-            "API Key", value=st.session_state.api_key,
-            type="password", placeholder="Paste key here")
-        st.markdown("""
-**Get Free Keys:**
-- 🟢 [Groq](https://console.groq.com) — No card needed
-- 🟢 [OpenRouter](https://openrouter.ai) — Free tier
-- 🟡 [OpenAI](https://platform.openai.com) — ₹0.15/msg
-        """)
-        if st.session_state.api_key:
-            st.success("✅ Key saved")
-
     st.markdown("---")
     st.markdown("### 👤 Profile")
     st.session_state.student_name = st.text_input("Name", value=st.session_state.student_name)
