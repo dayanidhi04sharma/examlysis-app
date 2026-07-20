@@ -841,7 +841,7 @@ PROVIDERS = {
 }
 
 def call_ai(messages, system="", temp=0.6, max_tok=900):
-    key = st.session_state.api_key.strip()
+    key = st.secrets["GROQ_API_KEY"]
     if not key:
         return "⚠️ Enter your API key in the sidebar first."
     if not REQUESTS_OK:
